@@ -10,7 +10,7 @@ html {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 	text-size-adjust: 100%;
-  background-image: "images/stardust.png";
+  background-color: $bg-color;
 }
 
 
@@ -45,12 +45,26 @@ header {
       list-style-type: none;
       a {
         display: block;
-        padding: .5em 1em;
+        padding: 1.25em 1em;
+        margin: 0.5em 0;
         text-align: center;
         text-decoration: none;
+        background-color: $btn-bg;
+        color: $txt-color;
+        font-size: 20px;
       }
     }
 }
+
+.navigation a:hover,
+.navigation a:active,
+.navigation a:focus {
+  background-color: $hvr-color;
+
+  @include ease(all, 300ms, ease-in-out)
+}
+
+
 
 .toggle-btn, 
 .close-btn  {
@@ -125,11 +139,13 @@ header {
     width: 24%;
     display: inline-block;
     border: none;
+    font-size: 1rem;
   }
 
   .navigation ul {
     width: 50%;
     float: right;
+    font-size: 0;
   }
 
   .navigation ul li a {
