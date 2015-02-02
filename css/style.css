@@ -121,7 +121,7 @@ header {
       font-size: 20px; }
 
 /* line 61, /Users/kaylaaraujo/Desktop/SCHOOL/Algonquin Graphic Design/Year 3/SEMESTER 2/Web Dev/exercise-3-starter/scss/components/main */
-.navigation li:hover, .navigation li:active, .navigation li:focus {
+.navigation ul li:hover, .navigation ul li:active, .navigation ul li:focus {
   background-color: #FFD6D6;
   transition: all 300ms ease-in-out; }
 
