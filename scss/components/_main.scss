@@ -56,9 +56,9 @@ header {
     }
 }
 
-.navigation a:hover,
-.navigation a:active,
-.navigation a:focus {
+.navigation li:hover,
+.navigation li:active,
+.navigation li:focus {
   background-color: $hvr-color;
 
   @include ease(all, 300ms, ease-in-out)
